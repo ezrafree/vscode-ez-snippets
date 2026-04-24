@@ -1,29 +1,30 @@
 {
-	"name": "js-snippets",
-	"displayName": "JavaScript Snippets",
-	"description": "JavaScript snippets for VS Code",
+	"name": "ez-snippets",
+	"displayName": "EZ Snippets",
+	"description": "Snippets for VS Code",
 	"version": "1.0.0",
 	"publisher": "ezrafree",
 	"keywords": [
 		"snippet",
 		"snippets",
+		"html",
+		"css",
 		"react",
-		"react-native",
 		"javascript",
 		"typescript",
+    "boilerplate",
 		"eslint",
+		"react-native",
 		"jest",
-		"testing",
-		"html",
-    "boilerplate"
+		"testing"
 	],
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ezrafree/vscode-javascript-snippets"
+		"url": "https://github.com/ezrafree/vscode-ez-snippets"
 	},
 	"engines": {
-		"vscode": "^1.54.0"
+		"vscode": "^1.85.0"
 	},
 	"categories": [
 		"Snippets"
