@@ -1,0 +1,45 @@
+{
+  "unitTest": {
+    "prefix": "testfile",
+    "body": [
+      "import { fireEvent, render } from '@testing-library/react-native'",
+      "import React from 'react'",
+      "",
+      "import { ${1:namedExport} } from '${2:module}'",
+      "",
+      "describe('${3:Suite Name}', () => {",
+      "    beforeEach(() => {})",
+      "    it('${4:Spec Name}', () => {",
+      "        ${5:// do something}",
+      "    })",
+      "})",
+      ""
+    ],
+    "description": "Unit Test"
+  },
+  "unitTestDescribe": {
+    "prefix": "testdescribe",
+    "body": [
+      "    describe('${1:Suite Name}', () => {",
+      "        ${2:// do something}",
+      "    })"
+    ],
+    "description": "Unit Test Spec"
+  },
+  "unitTestSpec": {
+    "prefix": "testspec",
+    "body": [
+      "    it('${1:Spec Name}', () => {",
+      "        ${2:// do something}",
+      "    })"
+    ],
+    "description": "Unit Test Spec"
+  },
+  "unitTestAssert": {
+    "prefix": "testassert",
+    "body": [
+      "    expect(${1:variable}).toEqual(${2:result})"
+    ],
+    "description": "Unit Test Assertion"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "reactComponentTypeScript": {
+    "prefix": "react-typescript",
+    "body": [
+      "import { useContext, useEffect, useState } from 'react'",
+      "import { Typography, colors } from 'design'",
+      "",
+      "import './${1:MyComponentName}.scss'",
+      "",
+      "interface ${1:MyComponentName}Props {",
+      "  loading: boolean",
+      "}",
+      "",
+      "const ${1:MyComponentName} = ({",
+      "  loading,",
+      "}: ${1:MyComponentName}Props) => {",
+      "  return (",
+      "    <div>",
+      "     ${2:Hello, world}",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:MyComponentName}",
+      ""
+    ],
+    "description": "React TypeScript functional component"
+  },
+  "reactNativeComponentTypeScript": {
+    "prefix": "reactnative-typescript",
+    "body": [
+      "import React, { FunctionComponent, ReactNode } from 'react'",
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "",
+      "type ${1:MyComponentName}Props = {",
+      "  children: ReactNode",
+      "}",
+      "",
+      "const ${1:MyComponentName}: FunctionComponent<${1:MyComponentName}Props> = ({",
+      "  children,",
+      "}: ${1:MyComponentName}Props) => {",
+      "  return (",
+      "    <View",
+      "      style={{",
+      "        flex: 1,",
+      "        justifyContent: \"center\",",
+      "        alignItems: \"center\"",
+      "      }",
+      "    }>",
+      "      <Text className={styles.center}>Hello, world!</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  center: {",
+      "    alignItems: 'center'",
+      "  }",
+      "})",
+      "",
+      "export default ${1:MyComponentName}",
+      ""
+    ],
+    "description": "React Native TypeScript functional component"
+  },
+  "useEffectHook": {
+    "prefix": "use-effect",
+    "body": [
+      "useEffect(() => {",
+      " ${1:console.log('render')}",
+      "",
+      " return () => {",
+      "   ${2:console.log('clean up')}",
+      " }",
+      "})",
+      ""
+    ],
+    "description": "React useEffect hook"
+  }
+}

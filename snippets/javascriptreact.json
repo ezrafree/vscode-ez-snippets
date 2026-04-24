@@ -1,0 +1,82 @@
+{
+  "jsxConditional": {
+    "prefix": "jsxif",
+    "body": [
+      "{condition ? (",
+      "  <Component />",
+      "): (",
+      "  <AnotherComponent />",
+      ")}"
+    ],
+    "description": "JSX conditional statement"
+  },
+  "jsxSwitchCase": {
+    "prefix": "jsxswitch",
+    "body": [
+      "{(() => {",
+      "  switch ($1) {",
+      "    case 'info':",
+      "      return ${2:<Info text={text} />}",
+      "    case 'warning':",
+      "      return ${3:<Warning text={text} />}",
+      "    case 'error':",
+      "      return ${4:<Error text={text} />}",
+      "    default:",
+      "      return null",
+      "  }",
+      "})()}"
+    ],
+    "description": "JSX switch case"
+  },
+  "reactComponent": {
+    "prefix": "react",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:MyComponentName} = () => {",
+      "  return (",
+      "    <div>",
+      "    ",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:MyComponentName}",
+      ""
+    ],
+    "description": "React functional component"
+  },
+  "reactNativeComponent": {
+    "prefix": "reactnative",
+    "body": [
+      "import React from 'react'",
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "",
+      "const ${1:MyComponentName} = ({",
+      "  children,",
+      "}) => {",
+      "  return (",
+      "    <View",
+      "      style={{",
+      "        flex: 1,",
+      "        justifyContent: \"center\",",
+      "        alignItems: \"center\"",
+      "      }",
+      "    }>",
+      "      <Text className={styles.center}>Hello, world!</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  center: {",
+      "    alignItems: 'center'",
+      "  }",
+      "})",
+      "",
+      "export default ${1:MyComponentName}",
+      ""
+    ],
+    "description": "React Native functional component"
+  }
+}

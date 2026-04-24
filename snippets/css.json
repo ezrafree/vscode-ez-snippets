@@ -1,0 +1,80 @@
+{
+  "Box Sizing Reset": {
+    "prefix": "box-sizing",
+    "body": [
+      "*, *::before, *::after {",
+      "  box-sizing: border-box;",
+      "}"
+    ],
+    "description": "Box sizing reset"
+  },
+
+  "Media Query": {
+    "prefix": "@media",
+    "body": [
+      "@media only screen and (${1|max-width,min-width|}: ${2:767}px) {",
+      "  ${3}",
+      "}"
+    ],
+    "description": "Media query"
+  },
+
+  "CSS Custom Properties": {
+    "prefix": "root",
+    "body": [
+      ":root {",
+      "  --${1:color-primary}: ${2:#000};",
+      "}"
+    ],
+    "description": "CSS custom properties block"
+  },
+
+  "CSS Base Reset": {
+    "prefix": "css-reset",
+    "body": [
+      "body {",
+      "  margin: 0;",
+      "  padding: 0;",
+      "  line-height: ${1:1.5};",
+      "  -webkit-font-smoothing: antialiased;",
+      "}"
+    ],
+    "description": "CSS base reset"
+  },
+
+  "Flexbox Center": {
+    "prefix": "flex-center",
+    "body": [
+      "display: flex;",
+      "align-items: center;",
+      "justify-content: center;"
+    ],
+    "description": "Flexbox centering"
+  },
+
+  "CSS Grid": {
+    "prefix": "grid",
+    "body": [
+      "display: grid;",
+      "grid-template-columns: repeat(${1:3}, 1fr);",
+      "gap: ${2:1rem};"
+    ],
+    "description": "CSS grid layout"
+  },
+
+  "Visually Hidden": {
+    "prefix": "hidden",
+    "body": [
+      "position: absolute;",
+      "width: 1px;",
+      "height: 1px;",
+      "padding: 0;",
+      "margin: -1px;",
+      "overflow: hidden;",
+      "clip: rect(0, 0, 0, 0);",
+      "white-space: nowrap;",
+      "border: 0;"
+    ],
+    "description": "Visually hidden (accessible hide)"
+  }
+}
