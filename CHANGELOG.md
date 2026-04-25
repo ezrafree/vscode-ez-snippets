@@ -2,6 +2,10 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.0.2]
+
+- Add LICENSE file.
+
 ## [1.0.1]
 
 - Add HTML page layout snippets.
