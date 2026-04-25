@@ -24,6 +24,7 @@
     ],
     "description": "Start an HTML document"
   },
+
   "HTML Open Graph Tags": {
     "prefix": "meta-og",
     "body": [
@@ -35,6 +36,7 @@
     ],
     "description": "Open Graph meta tags"
   },
+
   "HTML Twitter Card Tags": {
     "prefix": "meta-twitter",
     "body": [
@@ -76,6 +78,7 @@
     ],
     "description": "Self-hosted @font-face block"
   },
+
   "HTML Style Block": {
     "prefix": "style",
     "body": [
@@ -85,6 +88,7 @@
     ],
     "description": "Inline style block"
   },
+
   "HTML Script Block": {
     "prefix": "script",
     "body": [
@@ -93,5 +97,45 @@
       "</script>"
     ],
     "description": "Inline script block"
+  },
+
+  "HTML Layout": {
+    "prefix": "html-layout",
+    "body": [
+      "<header>",
+      "  ${1}",
+      "</header>",
+      "",
+      "<main>",
+      "  ${2}",
+      "</main>",
+      "",
+      "<footer>",
+      "  ${3}",
+      "</footer>"
+    ],
+    "description": "Basic HTML page layout"
+  },
+
+  "HTML Layout with Sidebar": {
+    "prefix": "html-layout-sidebar",
+    "body": [
+      "<header>",
+      "  ${1}",
+      "</header>",
+      "",
+      "<aside>",
+      "  ${2}",
+      "</aside>",
+      "",
+      "<main>",
+      "  ${3}",
+      "</main>",
+      "",
+      "<footer>",
+      "  ${4}",
+      "</footer>"
+    ],
+    "description": "HTML page layout with sidebar"
   }
 }

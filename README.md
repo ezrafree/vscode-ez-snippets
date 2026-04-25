@@ -29,28 +29,32 @@ If you want to show snippet suggestions first add this to your VS Code settings:
 
 ### HTML
 
-| Shortcut       | Command                                                         |
-| -------------- | --------------------------------------------------------------- |
-| `html`         | an HTML boilerplate with tab stops                              |
-| `meta-og`      | OpenGraph meta tags                                             |
-| `meta-twitter` | Twitter meta tags                                               |
-| `script-src`   | `<script src="${1}" ${2\|defer,async\|}></script>`              |
-| `script`       | `<script></script>`                                             |
-| `style`        | `<style></style>`                                               |
-| `link`         | `<link rel="stylesheet" href="$1">`                             |
-| `font-face`    | a self-hosted `@font-face` block                                |
+| Shortcut               | Command                                                         |
+| ---------------------- | --------------------------------------------------------------- |
+| `html`                 | an HTML boilerplate with tab stops                              |
+| `meta-og`              | OpenGraph meta tags                                             |
+| `meta-twitter`         | Twitter meta tags                                               |
+| `script-src`           | `<script src="${1}" ${2\|defer,async\|}></script>`              |
+| `script`               | `<script></script>`                                             |
+| `style`                | `<style></style>`                                               |
+| `link`                 | `<link rel="stylesheet" href="$1">`                             |
+| `font-face`            | a self-hosted `@font-face` block                                |
+| `html-layout`          | a simple HTML page layout with header, main & footer            |
+| `html-layout-sidebar`  | a simple HTML page layout with header, main, aside, & footer    |
 
 ### HTML
 
-| Shortcut       | Command                                                         |
-| -------------- | --------------------------------------------------------------- |
-| `box-sizing`   | box-sizing reset (include padding+border in width/height)       |
-| `@media`       | a media query with tab stops.                                   |
-| `root`         | a custom CSS properties block.                                  |
-| `css-reset`    | a base CSS reset.                                               |
-| `flex-center`  | Flexbox centering properties.                                   |
-| `grid`         | CSS grid layout.                                                |
-| `hidden`       | Properties to visually hide but keep element accessible.        |
+| Shortcut               | Command                                                         |
+| ---------------------- | --------------------------------------------------------------- |
+| `box-sizing`           | box-sizing reset (include padding+border in width/height)       |
+| `@media`               | a media query with tab stops                                    |
+| `root`                 | a custom CSS properties block                                   |
+| `css-reset`            | a base CSS reset                                                |
+| `flex-center`          | Flexbox centering properties                                    |
+| `grid`                 | CSS grid layout                                                 |
+| `hidden`               | Properties to visually hide but keep element accessible         |
+| `css-layout`           | The CSS for the markup that `html-layout` implements            |
+| `css-layout-sidebar`   | The CSS for the markup that `html-layout-sidebar` implements    |
 
 ### Console Logs
 
