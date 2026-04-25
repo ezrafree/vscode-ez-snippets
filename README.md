@@ -32,15 +32,18 @@ If you want to show snippet suggestions first add this to your VS Code settings:
 | Shortcut               | Command                                                         |
 | ---------------------- | --------------------------------------------------------------- |
 | `html`                 | an HTML boilerplate with tab stops                              |
+| `html-favicon`         | Favicon and app icon meta tags                                  |
+| `html-layout`          | a simple HTML page layout with header, main & footer            |
+| `html-layout-sidebar`  | a simple HTML page layout with header, main, aside, & footer    |
+| `link`                 | `<link rel="stylesheet" href="$1">`                             |
+| `link-google-fonts`    | Google Fonts with preconnect                                    |
+| `meta-pwa`             | PWA and Apple web app meta tags                                 |
 | `meta-og`              | OpenGraph meta tags                                             |
 | `meta-twitter`         | Twitter meta tags                                               |
 | `script-src`           | `<script src="${1}" ${2\|defer,async\|}></script>`              |
-| `script`               | `<script></script>`                                             |
 | `style`                | `<style></style>`                                               |
-| `link`                 | `<link rel="stylesheet" href="$1">`                             |
+| `script`               | `<script></script>`                                             |
 | `font-face`            | a self-hosted `@font-face` block                                |
-| `html-layout`          | a simple HTML page layout with header, main & footer            |
-| `html-layout-sidebar`  | a simple HTML page layout with header, main, aside, & footer    |
 
 ### HTML
 

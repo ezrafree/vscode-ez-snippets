@@ -137,5 +137,40 @@
       "</footer>"
     ],
     "description": "HTML page layout with sidebar"
+  },
+
+  "HTML Favicon Block": {
+    "prefix": "html-favicon",
+    "body": [
+      "<link rel=\"manifest\" href=\"/manifest.json\">",
+      "<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">",
+      "<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">",
+      "<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">",
+      "<link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\" color=\"${1:#000000}\">",
+      "<meta name=\"msapplication-TileColor\" content=\"${2:#000000}\">",
+      "<meta name=\"theme-color\" content=\"${3:#ffffff}\">"
+    ],
+    "description": "Favicon and app icon meta tags"
+  },
+
+  "Google Fonts": {
+    "prefix": "link-google-fonts",
+    "body": [
+      "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+      "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+      "<link href=\"${1:https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap}\" rel=\"stylesheet\">"
+    ],
+    "description": "Google Fonts with preconnect"
+  },
+
+  "PWA Meta Tags": {
+    "prefix": "meta-pwa",
+    "body": [
+      "<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">",
+      "<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"${1|black,default,black-translucent|}\">",
+      "<meta name=\"apple-mobile-web-app-title\" content=\"${2:App Title}\">",
+      "<meta name=\"theme-color\" content=\"${3:#ffffff}\">"
+    ],
+    "description": "PWA and Apple web app meta tags"
   }
 }

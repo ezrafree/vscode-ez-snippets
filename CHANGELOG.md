@@ -4,6 +4,7 @@ All notable changes to the "ez-snippets" extension will be documented in this fi
 
 ## [1.0.2]
 
+- Add HTML meta and link snippets.
 - Add LICENSE file.
 
 ## [1.0.1]
