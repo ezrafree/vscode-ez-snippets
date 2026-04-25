@@ -2,7 +2,7 @@
 	"name": "ez-snippets",
 	"displayName": "EZ Snippets",
 	"description": "Snippets for VS Code",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"publisher": "ezrafree",
 	"keywords": [
 		"snippet",
