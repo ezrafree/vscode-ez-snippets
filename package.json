@@ -2,7 +2,7 @@
 	"name": "ez-snippets",
 	"displayName": "EZ Snippets",
 	"description": "Snippets for VS Code",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "ezrafree",
 	"keywords": [
 		"snippet",
@@ -69,6 +69,14 @@
 			},
 			{
 				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "less",
 				"path": "./snippets/css.json"
 			}
 		]
