@@ -39,6 +39,93 @@
     "description": "Try catch block"
   },
 
+  "Destructure Array": {
+    "prefix": "destructure-array",
+    "body": [
+      "const [${1:a}, ${2:b}] = ${3:array}"
+    ],
+    "description": "Array destructuring"
+  },
+
+  "Destructure Object": {
+    "prefix": "destructure-object",
+    "body": [
+      "const { ${1:a}, ${2:b} } = ${3:object}"
+    ],
+    "description": "Object destructuring"
+  },
+
+  "Promise": {
+    "prefix": "promise",
+    "body": [
+      "new Promise((resolve, reject) => {",
+      "  ${1}",
+      "})"
+    ],
+    "description": "New Promise"
+  },
+
+  "Promise.all": {
+    "prefix": "promise-all",
+    "body": [
+      "Promise.all([${1}])"
+    ],
+    "description": "Promise.all"
+  },
+
+  "Fetch": {
+    "prefix": "fetch",
+    "body": [
+      "const response = await fetch('${1:url}')",
+      "const data = await response.json()"
+    ],
+    "description": "Fetch with await and json parsing"
+  },
+
+  "Ternary": {
+    "prefix": "ternary",
+    "body": [
+      "const ${1:name} = ${2:condition} ? ${3:true} : ${4:false}"
+    ],
+    "description": "Ternary operator"
+  },
+
+  "Nullish Coalescing": {
+    "prefix": "nullish",
+    "body": [
+      "const ${1:value} = ${2:a} ?? ${3:b}"
+    ],
+    "description": "Nullish coalescing operator"
+  },
+
+  "Optional Chaining": {
+    "prefix": "optional-chain",
+    "body": [
+      "${1:obj}?.${2:property}"
+    ],
+    "description": "Optional chaining"
+  },
+
+  "For Of": {
+    "prefix": "for-of",
+    "body": [
+      "for (const ${1:item} of ${2:items}) {",
+      "  ${3}",
+      "}"
+    ],
+    "description": "For of loop"
+  },
+
+  "For In": {
+    "prefix": "for-in",
+    "body": [
+      "for (const ${1:key} in ${2:object}) {",
+      "  ${3}",
+      "}"
+    ],
+    "description": "For in loop"
+  },
+
   "setTimeout": {
     "prefix": "settimeout",
     "body": [

@@ -2,6 +2,10 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.2.0]
+
+- Add JavaScript snippets: array and object destructuring, Promise, Promise.all, fetch, ternary, nullish coalescing, optional chaining, for-of, and for-in loops
+
 ## [1.1.0]
 
 - Add JavaScript snippets: arrow functions, async arrow functions, try/catch, setTimeout, setInterval, localStorage get/set

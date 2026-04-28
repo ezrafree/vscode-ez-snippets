@@ -40,6 +40,16 @@
 | `const-arrow-implicit` | Arrow function with implicit return |
 | `const-arrow-async` | Async arrow function |
 | `try-catch` | Try catch block |
+| `destructure-array` | Array destructuring |
+| `destructure-object` | Object destructuring |
+| `promise` | New Promise |
+| `promise-all` | Promise.all |
+| `fetch` | Fetch with await and json parsing |
+| `ternary` | Ternary operator |
+| `nullish` | Nullish coalescing operator |
+| `optional-chain` | Optional chaining |
+| `for-of` | For of loop |
+| `for-in` | For in loop |
 | `settimeout` | setTimeout |
 | `setinterval` | setInterval |
 | `import-default` | Import default export |
