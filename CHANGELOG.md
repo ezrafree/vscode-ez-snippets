@@ -2,6 +2,11 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.3.0]
+
+- Add JavaScript snippets: console.table, console.error, console.time, console.timeEnd, forEach, map, filter, and reduce
+- Fix testfile snippet indentation and update to use @testing-library/react with tab stops on import
+
 ## [1.2.0]
 
 - Add JavaScript snippets: array and object destructuring, Promise, Promise.all, fetch, ternary, nullish coalescing, optional chaining, for-of, and for-in loops

@@ -42,14 +42,18 @@
 | `try-catch` | Try catch block |
 | `destructure-array` | Array destructuring |
 | `destructure-object` | Object destructuring |
-| `promise` | New Promise |
-| `promise-all` | Promise.all |
-| `fetch` | Fetch with await and json parsing |
+| `map` | Array map |
+| `filter` | Array filter |
+| `reduce` | Array reduce |
+| `foreach` | forEach loop |
+| `for-of` | For of loop |
+| `for-in` | For in loop |
 | `ternary` | Ternary operator |
 | `nullish` | Nullish coalescing operator |
 | `optional-chain` | Optional chaining |
-| `for-of` | For of loop |
-| `for-in` | For in loop |
+| `promise` | New Promise |
+| `promise-all` | Promise.all |
+| `fetch` | Fetch with await and json parsing |
 | `settimeout` | setTimeout |
 | `setinterval` | setInterval |
 | `import-default` | Import default export |
@@ -61,6 +65,10 @@
 | `console-log-json` | Console log pretty json |
 | `console-log-object` | Console log object |
 | `console-log-eslint-disable` | Console log with eslint disable comment |
+| `console-table` | Console table |
+| `console-error` | Console error |
+| `console-time` | Console time — start measuring |
+| `console-time-end` | Console time end — stop measuring |
 | `eslint-disable` | ESLint disable rule |
 | `eslint-disable-nextline` | ESLint disable rule on next line |
 
@@ -85,7 +93,7 @@
 
 | Prefix | Description |
 | ------ | ----------- |
-| `testfile` | Unit Test |
-| `testdescribe` | Unit Test Spec |
-| `testspec` | Unit Test Spec |
-| `testassert` | Unit Test Assertion |
+| `test-file` | Unit test boilerplate |
+| `test-describe` | Unit Test Suite |
+| `test-spec` | Unit Test Spec |
+| `test-assert` | Unit Test Assertion |

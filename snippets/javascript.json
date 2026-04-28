@@ -55,31 +55,65 @@
     "description": "Object destructuring"
   },
 
-  "Promise": {
-    "prefix": "promise",
+  "map": {
+    "prefix": "map",
     "body": [
-      "new Promise((resolve, reject) => {",
-      "  ${1}",
+      "${1:array}.map((${2:item}) => {",
+      "  ${3}",
       "})"
     ],
-    "description": "New Promise"
+    "description": "Array map"
   },
 
-  "Promise.all": {
-    "prefix": "promise-all",
+  "filter": {
+    "prefix": "filter",
     "body": [
-      "Promise.all([${1}])"
+      "${1:array}.filter((${2:item}) => {",
+      "  ${3}",
+      "})"
     ],
-    "description": "Promise.all"
+    "description": "Array filter"
   },
 
-  "Fetch": {
-    "prefix": "fetch",
+  "reduce": {
+    "prefix": "reduce",
     "body": [
-      "const response = await fetch('${1:url}')",
-      "const data = await response.json()"
+      "${1:array}.reduce((${2:acc}, ${3:item}) => {",
+      "  ${4}",
+      "  return ${2:acc}",
+      "}, ${5:initialValue})"
     ],
-    "description": "Fetch with await and json parsing"
+    "description": "Array reduce"
+  },
+
+  "forEach": {
+    "prefix": "foreach",
+    "body": [
+      "${1:array}.forEach((${2:item}) => {",
+      "  ${3}",
+      "})"
+    ],
+    "description": "forEach loop"
+  },
+
+  "For Of": {
+    "prefix": "for-of",
+    "body": [
+      "for (const ${1:item} of ${2:items}) {",
+      "  ${3}",
+      "}"
+    ],
+    "description": "For of loop"
+  },
+
+  "For In": {
+    "prefix": "for-in",
+    "body": [
+      "for (const ${1:key} in ${2:object}) {",
+      "  ${3}",
+      "}"
+    ],
+    "description": "For in loop"
   },
 
   "Ternary": {
@@ -106,24 +140,31 @@
     "description": "Optional chaining"
   },
 
-  "For Of": {
-    "prefix": "for-of",
+    "Promise": {
+    "prefix": "promise",
     "body": [
-      "for (const ${1:item} of ${2:items}) {",
-      "  ${3}",
-      "}"
+      "new Promise((resolve, reject) => {",
+      "  ${1}",
+      "})"
     ],
-    "description": "For of loop"
+    "description": "New Promise"
   },
 
-  "For In": {
-    "prefix": "for-in",
+  "Promise.all": {
+    "prefix": "promise-all",
     "body": [
-      "for (const ${1:key} in ${2:object}) {",
-      "  ${3}",
-      "}"
+      "Promise.all([${1}])"
     ],
-    "description": "For in loop"
+    "description": "Promise.all"
+  },
+
+  "Fetch": {
+    "prefix": "fetch",
+    "body": [
+      "const response = await fetch('${1:url}')",
+      "const data = await response.json()"
+    ],
+    "description": "Fetch with await and json parsing"
   },
 
   "setTimeout": {
@@ -216,6 +257,38 @@
       "// eslint-disable-next-line no-console\nconsole.log('$1: ', $1)"
     ],
     "description": "Console log with eslint disable comment"
+  },
+
+  "Console Table": {
+    "prefix": "console-table",
+    "body": [
+      "console.table(${1:object})"
+    ],
+    "description": "Console table"
+  },
+
+  "Console Error": {
+    "prefix": "console-error",
+    "body": [
+      "console.error(${1:object})"
+    ],
+    "description": "Console error"
+  },
+
+  "Console Time": {
+    "prefix": "console-time",
+    "body": [
+      "console.time('${1:label}')"
+    ],
+    "description": "Console time — start measuring"
+  },
+
+  "Console Time End": {
+    "prefix": "console-time-end",
+    "body": [
+      "console.timeEnd('${1:label}')"
+    ],
+    "description": "Console time end — stop measuring"
   },
 
   "eslintDisable": {
