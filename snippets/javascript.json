@@ -3,7 +3,7 @@
     "prefix": "const-arrow",
     "body": [
       "const ${1:name} = (${2:params}) => {",
-      "  ${3:return true;}",
+      "  ${3}",
       "}"
     ],
     "description": "Arrow function"
@@ -140,7 +140,7 @@
     "description": "Optional chaining"
   },
 
-    "Promise": {
+  "Promise": {
     "prefix": "promise",
     "body": [
       "new Promise((resolve, reject) => {",
@@ -203,6 +203,32 @@
     "description": "Import named export"
   },
 
+    "Export Default": {
+    "prefix": "export-default",
+    "body": [
+      "export default ${1:value}"
+    ],
+    "description": "Export default"
+  },
+
+  "Export Named": {
+    "prefix": "export-named",
+    "body": [
+      "export const ${1:name} = ${2:value}"
+    ],
+    "description": "Export named"
+  },
+
+  "Export Named Function": {
+    "prefix": "export-fn",
+    "body": [
+      "export const ${1:name} = (${2:params}) => {",
+      "  ${3}",
+      "}"
+    ],
+    "description": "Export named arrow function"
+  },
+
   "localStorage getItem": {
     "prefix": "localstorage-get",
     "body": [
@@ -219,7 +245,7 @@
     "description": "localStorage setItem with JSON stringify"
   },
 
-    "consoleLogNamed": {
+  "consoleLogNamed": {
     "prefix": "console-log-named",
     "body": [
       "console.log('$1: ', $1)"

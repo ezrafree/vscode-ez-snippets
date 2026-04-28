@@ -1,0 +1,158 @@
+{
+  "jsxConditional": {
+    "prefix": "jsx-if",
+    "body": [
+      "{condition ? (",
+      "  <Component />",
+      "): (",
+      "  <AnotherComponent />",
+      ")}"
+    ],
+    "description": "JSX conditional statement"
+  },
+
+  "jsxSwitchCase": {
+    "prefix": "jsx-switch",
+    "body": [
+      "{(() => {",
+      "  switch ($1) {",
+      "    case 'info':",
+      "      return ${2:<Info text={text} />}",
+      "    case 'warning':",
+      "      return ${3:<Warning text={text} />}",
+      "    case 'error':",
+      "      return ${4:<Error text={text} />}",
+      "    default:",
+      "      return null",
+      "  }",
+      "})()}"
+    ],
+    "description": "JSX switch case"
+  },
+
+  "useState": {
+    "prefix": "use-state",
+    "body": [
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue})"
+    ],
+    "description": "React useState hook"
+  },
+
+  "useEffect": {
+    "prefix": "use-effect",
+    "body": [
+      "useEffect(() => {",
+      "  ${1}",
+      "",
+      "  return () => {",
+      "    ${2}",
+      "  }",
+      "}, [${3}])"
+    ],
+    "description": "React useEffect hook"
+  },
+
+  "useCallback": {
+    "prefix": "use-callback",
+    "body": [
+      "const ${1:callback} = useCallback(() => {",
+      "  ${2}",
+      "}, [${3}])"
+    ],
+    "description": "React useCallback hook"
+  },
+
+  "useMemo": {
+    "prefix": "use-memo",
+    "body": [
+      "const ${1:value} = useMemo(() => ${2}, [${3}])"
+    ],
+    "description": "React useMemo hook"
+  },
+
+  "useRef": {
+    "prefix": "use-ref",
+    "body": [
+      "const ${1:ref} = useRef(${2:null})"
+    ],
+    "description": "React useRef hook"
+  },
+
+  "useContext": {
+    "prefix": "use-context",
+    "body": [
+      "const ${1:value} = useContext(${2:Context})"
+    ],
+    "description": "React useContext hook"
+  },
+
+  "useReducer": {
+    "prefix": "use-reducer",
+    "body": [
+      "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState})"
+    ],
+    "description": "React useReducer hook"
+  },
+
+    "Use Client": {
+    "prefix": "use-client",
+    "body": [
+      "'use client'",
+      ""
+    ],
+    "description": "React Client Component directive"
+  },
+
+  "Use Server": {
+    "prefix": "use-server",
+    "body": [
+      "'use server'",
+      ""
+    ],
+    "description": "React Server Action directive"
+  },
+
+  "reactComponent": {
+    "prefix": "react-component",
+    "body": [
+      "const ${1:MyComponentName} = () => {",
+      "  return (",
+      "    <>",
+      "      ${2}",
+      "    </>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:MyComponentName}"
+    ],
+    "description": "React functional component"
+  },
+
+  "reactNativeComponent": {
+    "prefix": "reactnative-component",
+    "body": [
+      "import { StyleSheet, Text, View } from 'react-native'",
+      "",
+      "const ${1:MyComponentName} = ({",
+      "  children,",
+      "}) => {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>${2}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    justifyContent: 'center',",
+      "    alignItems: 'center',",
+      "  }",
+      "})",
+      "",
+      "export default ${1:MyComponentName}"
+    ],
+    "description": "React Native functional component"
+  }
+}
