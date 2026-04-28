@@ -3,7 +3,7 @@
   "type": "module",
 	"displayName": "EZ Snippets",
 	"description": "Snippets for VS Code",
-	"version": "1.4.2",
+	"version": "1.4.3",
 	"publisher": "ezrafree",
 	"keywords": [
 		"snippet",

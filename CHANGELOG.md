@@ -2,6 +2,10 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.4.3]
+
+- Bugfix: Ignore image from VS Code extension package
+
 ## [1.4.2]
 
 - Update project README
