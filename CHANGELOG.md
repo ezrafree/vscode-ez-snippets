@@ -2,6 +2,10 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.4.2]
+
+- Update project README
+
 ## [1.4.1]
 
 - Reorganize snippets: move hooks and exports to react.json, scoped to JSX and TSX files only

@@ -11,15 +11,17 @@
 
 This is a collection of useful web development code snippets for VS Code. This extension offers snippets for HTML, CSS, JavaScript, React, TypeScript, React Native and Jest/Testing Library.
 
+![HTML snippet demo](images/html.gif)
+
 ## Install Instructions
 
 This extension can be installed through the VS Code Marketplace:
 
 [https://marketplace.visualstudio.com/items?itemName=ezrafree.ez-snippets](https://marketplace.visualstudio.com/items?itemName=ezrafree.ez-snippets)
 
-## My Other Extensions
+## Features
 
-> Also check out [Markdown Preview](https://marketplace.visualstudio.com/items?itemName=ezrafree.markdown-preview), an extension that improves the markdown preview pane by adding copy buttons to fenced code blocks, setting a max-width for easier reading, and various bugfixes.
+See [SNIPPETS.md](./SNIPPETS.md) for the full list of snippets.
 
 ## Suggestions Ordering
 
@@ -29,6 +31,11 @@ If you want to show snippet suggestions first add this to your VS Code settings:
 "editor.snippetSuggestions": "top"
 ```
 
-## Features
+## My Other Extensions
 
-See [SNIPPETS.md](./SNIPPETS.md) for the full list of snippets.
+> Also check out [Markdown Preview](https://marketplace.visualstudio.com/items?itemName=ezrafree.markdown-preview), an extension that improves the markdown preview pane by adding copy buttons to fenced code blocks, setting a max-width for easier reading, and various bugfixes.
+
+## My Other Projects
+
+> You can also check out my other projects on my portfolio:
+> [www.quietmindcreative.com/portfolio/](https://www.quietmindcreative.com/portfolio/)
