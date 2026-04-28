@@ -1,8 +1,9 @@
 {
 	"name": "ez-snippets",
+  "type": "module",
 	"displayName": "EZ Snippets",
 	"description": "Snippets for VS Code",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"publisher": "ezrafree",
 	"keywords": [
 		"snippet",
@@ -45,7 +46,7 @@
 			},
 			{
 				"language": "javascriptreact",
-				"path": "./snippets/unit_tests.json"
+				"path": "./snippets/testing.json"
 			},
 			{
 				"language": "typescript",
@@ -61,7 +62,7 @@
 			},
 			{
 				"language": "typescriptreact",
-				"path": "./snippets/unit_tests.json"
+				"path": "./snippets/testing.json"
 			},
 			{
 				"language": "html",
@@ -81,6 +82,9 @@
 			}
 		]
 	},
+  "scripts": {
+    "docs": "node generate-docs.js"
+  },
 	"__metadata": {
 		"id": "9118f90d-03dd-433f-9f9b-b260a72a102b",
 		"publisherDisplayName": "Ezra Free",

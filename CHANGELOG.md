@@ -2,6 +2,12 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.1.0]
+
+- Add JavaScript snippets: arrow functions, async arrow functions, try/catch, setTimeout, setInterval, localStorage get/set
+- Standardize all snippet prefixes to kebab-case
+- Add auto-generated SNIPPETS.md for full snippet reference
+
 ## [1.0.2]
 
 - Add HTML meta and link snippets.

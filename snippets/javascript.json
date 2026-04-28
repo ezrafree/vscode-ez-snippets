@@ -1,65 +1,149 @@
 {
-  "eslintDisable": {
-    "prefix": "esdisable",
+  "Arrow Function": {
+    "prefix": "const-arrow",
     "body": [
-      "/* eslint-disable @typescript-eslint/no-unused-vars */"
+      "const ${1:name} = (${2:params}) => {",
+      "  ${3:return true;}",
+      "}"
     ],
-    "description": "eslint disable rule"
+    "description": "Arrow function"
   },
-  "eslintDisableNextLine": {
-    "prefix": "esdisablenextline",
+
+  "Arrow Function (implicit return)": {
+    "prefix": "const-arrow-implicit",
     "body": [
-      "/* eslint-disable-next-line @typescript-eslint/no-unused-vars */"
+      "const ${1:name} = (${2:params}) => ${3:value};"
     ],
-    "description": "eslint disable rule on next line"
+    "description": "Arrow function with implicit return"
   },
-  "consoleLogNamed": {
-    "prefix": "cl",
+
+  "Async Arrow Function": {
+    "prefix": "const-arrow-async",
     "body": [
-      "console.log('$1: ', $1)"
+      "const ${1:name} = async (${2:params}) => {",
+      "  ${3}",
+      "}"
     ],
-    "description": "named console log"
+    "description": "Async arrow function"
   },
-  "consoleLog": {
-    "prefix": "clog",
+
+  "Try Catch": {
+    "prefix": "try-catch",
     "body": [
-      "console.log($1)"
+      "try {",
+      "  ${1}",
+      "} catch (${2:error}) {",
+      "  console.error(${2:error})",
+      "}"
     ],
-    "description": "console log"
+    "description": "Try catch block"
   },
-  "consoleLogJson": {
-    "prefix": "cljson",
+
+  "setTimeout": {
+    "prefix": "settimeout",
     "body": [
-      "console.log(JSON.stringify($1, null, 2))"
+      "setTimeout(() => {",
+      "  ${1}",
+      "}, ${2:1000})"
     ],
-    "description": "console log pretty json"
+    "description": "setTimeout"
   },
-  "consoleLogObject": {
-    "prefix": "clobj",
+
+  "setInterval": {
+    "prefix": "setinterval",
     "body": [
-      "console.log({ $1 })"
+      "setInterval(() => {",
+      "  ${1}",
+      "}, ${2:1000})"
     ],
-    "description": "console log object"
+    "description": "setInterval"
   },
-  "consoleLogEslint": {
-    "prefix": "cleslint",
-    "body": [
-      "// eslint-disable-next-line no-console\nconsole.log('$1: ', $1)"
-    ],
-    "description": "console log with eslint disable comment"
-  },
+
   "importStatement": {
-    "prefix": "imp",
+    "prefix": "import-default",
     "body": [
       "import ${2:moduleName} from '${1:module}'$0"
     ],
-    "description": "import default export"
+    "description": "Import default export"
   },
+
   "importNamed": {
-    "prefix": "impn",
+    "prefix": "import-named",
     "body": [
       "import { $2 } from '${1:module}'$0"
     ],
-    "description": "import named export"
+    "description": "Import named export"
+  },
+
+  "localStorage getItem": {
+    "prefix": "localstorage-get",
+    "body": [
+      "JSON.parse(localStorage.getItem('${1:key}'))"
+    ],
+    "description": "localStorage getItem with JSON parse"
+  },
+
+  "localStorage setItem": {
+    "prefix": "localstorage-set",
+    "body": [
+      "localStorage.setItem('${1:key}', JSON.stringify(${2:value}))"
+    ],
+    "description": "localStorage setItem with JSON stringify"
+  },
+
+    "consoleLogNamed": {
+    "prefix": "console-log-named",
+    "body": [
+      "console.log('$1: ', $1)"
+    ],
+    "description": "Named console log"
+  },
+
+  "consoleLog": {
+    "prefix": "console-log",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "Console log"
+  },
+
+  "consoleLogJson": {
+    "prefix": "console-log-json",
+    "body": [
+      "console.log(JSON.stringify($1, null, 2))"
+    ],
+    "description": "Console log pretty json"
+  },
+
+  "consoleLogObject": {
+    "prefix": "console-log-object",
+    "body": [
+      "console.log({ $1 })"
+    ],
+    "description": "Console log object"
+  },
+
+  "consoleLogEslint": {
+    "prefix": "console-log-eslint-disable",
+    "body": [
+      "// eslint-disable-next-line no-console\nconsole.log('$1: ', $1)"
+    ],
+    "description": "Console log with eslint disable comment"
+  },
+
+  "eslintDisable": {
+    "prefix": "eslint-disable",
+    "body": [
+      "/* eslint-disable @typescript-eslint/no-unused-vars */"
+    ],
+    "description": "ESLint disable rule"
+  },
+
+  "eslintDisableNextLine": {
+    "prefix": "eslint-disable-nextline",
+    "body": [
+      "/* eslint-disable-next-line @typescript-eslint/no-unused-vars */"
+    ],
+    "description": "ESLint disable rule on next line"
   }
 }
