@@ -2,6 +2,13 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.4.0]
+
+- Add React hook snippets: useState (with auto-capitalized setter), useEffect, useCallback, useMemo, useRef, useContext, useReducer
+- Add export snippets: export-default, export-named, export-fn
+- Add Next.js directive snippets: use-client, use-server
+- Improve useEffect snippet to include dependency array and fix indentation
+
 ## [1.3.0]
 
 - Add JavaScript snippets: console.table, console.error, console.time, console.timeEnd, forEach, map, filter, and reduce

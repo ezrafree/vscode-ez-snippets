@@ -9,7 +9,7 @@
   </a>
 </p>
 
-This is a collection of useful web development code snippets for VS Code. This extension offers snippets for HTML, CSS, JavaScript, React, TypeScript, React Native and Jest.
+This is a collection of useful web development code snippets for VS Code. This extension offers snippets for HTML, CSS, JavaScript, React, TypeScript, React Native and Jest/Testing Library.
 
 ## Install Instructions
 

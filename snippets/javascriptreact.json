@@ -1,6 +1,6 @@
 {
   "jsxConditional": {
-    "prefix": "jsxif",
+    "prefix": "jsx-if",
     "body": [
       "{condition ? (",
       "  <Component />",
@@ -12,7 +12,7 @@
   },
 
   "jsxSwitchCase": {
-    "prefix": "jsxswitch",
+    "prefix": "jsx-switch",
     "body": [
       "{(() => {",
       "  switch ($1) {",
@@ -31,7 +31,7 @@
   },
 
   "reactComponent": {
-    "prefix": "react",
+    "prefix": "react-component",
     "body": [
       "import React from 'react'",
       "",
@@ -50,7 +50,7 @@
   },
 
   "reactNativeComponent": {
-    "prefix": "reactnative",
+    "prefix": "reactnative-component",
     "body": [
       "import React from 'react'",
       "import { StyleSheet, Text, View } from 'react-native'",

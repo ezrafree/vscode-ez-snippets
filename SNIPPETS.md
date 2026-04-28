@@ -76,10 +76,10 @@
 
 | Prefix | Description |
 | ------ | ----------- |
-| `jsxif` | JSX conditional statement |
-| `jsxswitch` | JSX switch case |
-| `react` | React functional component |
-| `reactnative` | React Native functional component |
+| `jsx-if` | JSX conditional statement |
+| `jsx-switch` | JSX switch case |
+| `react-component` | React functional component |
+| `reactnative-component` | React Native functional component |
 
 ## React / TypeScript
 
@@ -87,7 +87,18 @@
 | ------ | ----------- |
 | `react-typescript` | React TypeScript functional component |
 | `reactnative-typescript` | React Native TypeScript functional component |
+| `use-state` | React useState hook |
 | `use-effect` | React useEffect hook |
+| `use-callback` | React useCallback hook |
+| `use-memo` | React useMemo hook |
+| `use-ref` | React useRef hook |
+| `use-context` | React useContext hook |
+| `use-reducer` | React useReducer hook |
+| `export-default` | Export default |
+| `export-named` | Export named |
+| `export-fn` | Export named arrow function |
+| `use-client` | React Client Component directive |
+| `use-server` | React Server Action directive |
 
 ## Unit Tests
 
