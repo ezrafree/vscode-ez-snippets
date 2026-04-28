@@ -1,5 +1,5 @@
 {
-  "reactComponentTypeScript": {
+  "React Component TypeScript": {
     "prefix": "react-typescript",
     "body": [
       "interface ${1:MyComponentName}Props {",
@@ -19,7 +19,7 @@
     "description": "React TypeScript functional component"
   },
 
-  "reactNativeComponentTypeScript": {
+  "React Native Component TypeScript": {
     "prefix": "reactnative-typescript",
     "body": [
       "import { StyleSheet, Text, View } from 'react-native'",

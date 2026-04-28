@@ -1,5 +1,5 @@
 {
-  "jsxConditional": {
+  "JSX Conditional": {
     "prefix": "jsx-if",
     "body": [
       "{condition ? (",
@@ -11,7 +11,7 @@
     "description": "JSX conditional statement"
   },
 
-  "jsxSwitchCase": {
+  "JSX Switch Case": {
     "prefix": "jsx-switch",
     "body": [
       "{(() => {",
@@ -30,7 +30,7 @@
     "description": "JSX switch case"
   },
 
-  "useState": {
+  "Use State": {
     "prefix": "use-state",
     "body": [
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue})"
@@ -38,7 +38,7 @@
     "description": "React useState hook"
   },
 
-  "useEffect": {
+  "Use Effect": {
     "prefix": "use-effect",
     "body": [
       "useEffect(() => {",
@@ -52,7 +52,7 @@
     "description": "React useEffect hook"
   },
 
-  "useCallback": {
+  "Use Callback": {
     "prefix": "use-callback",
     "body": [
       "const ${1:callback} = useCallback(() => {",
@@ -62,7 +62,7 @@
     "description": "React useCallback hook"
   },
 
-  "useMemo": {
+  "Use Memo": {
     "prefix": "use-memo",
     "body": [
       "const ${1:value} = useMemo(() => ${2}, [${3}])"
@@ -70,7 +70,7 @@
     "description": "React useMemo hook"
   },
 
-  "useRef": {
+  "Use Ref": {
     "prefix": "use-ref",
     "body": [
       "const ${1:ref} = useRef(${2:null})"
@@ -78,7 +78,7 @@
     "description": "React useRef hook"
   },
 
-  "useContext": {
+  "Use Context": {
     "prefix": "use-context",
     "body": [
       "const ${1:value} = useContext(${2:Context})"
@@ -86,7 +86,7 @@
     "description": "React useContext hook"
   },
 
-  "useReducer": {
+  "Use Reducer": {
     "prefix": "use-reducer",
     "body": [
       "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState})"
@@ -94,7 +94,7 @@
     "description": "React useReducer hook"
   },
 
-    "Use Client": {
+  "Use Client": {
     "prefix": "use-client",
     "body": [
       "'use client'",
@@ -112,7 +112,7 @@
     "description": "React Server Action directive"
   },
 
-  "reactComponent": {
+  "React Component": {
     "prefix": "react-component",
     "body": [
       "const ${1:MyComponentName} = () => {",
@@ -128,7 +128,7 @@
     "description": "React functional component"
   },
 
-  "reactNativeComponent": {
+  "React Native Component": {
     "prefix": "reactnative-component",
     "body": [
       "import { StyleSheet, Text, View } from 'react-native'",

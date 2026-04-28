@@ -1,5 +1,5 @@
 {
-  "unitTestFile": {
+  "Unit Test File": {
     "prefix": "test-file",
     "body": [
       "import { ${1:render} } from '${2:@testing-library/react}'",
@@ -17,7 +17,7 @@
     "description": "Unit test boilerplate"
   },
 
-  "unitTestDescribe": {
+  "Unit Test Describe": {
     "prefix": "test-describe",
     "body": [
       "  describe('${1:Suite Name}', () => {",
@@ -27,7 +27,7 @@
     "description": "Unit Test Suite"
   },
 
-  "unitTestSpec": {
+  "Unit Test Spec": {
     "prefix": "test-spec",
     "body": [
       "  it('${1:Spec Name}', () => {",
@@ -37,7 +37,7 @@
     "description": "Unit Test Spec"
   },
 
-  "unitTestAssert": {
+  "Unit Test Assert": {
     "prefix": "test-assert",
     "body": [
       "  expect(${1:variable}).toEqual(${2:result})"
