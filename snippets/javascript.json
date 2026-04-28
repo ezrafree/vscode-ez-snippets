@@ -187,7 +187,7 @@
     "description": "setInterval"
   },
 
-  "importStatement": {
+  "Import Default": {
     "prefix": "import-default",
     "body": [
       "import ${2:moduleName} from '${1:module}'$0"
@@ -195,7 +195,7 @@
     "description": "Import default export"
   },
 
-  "importNamed": {
+  "Import Named": {
     "prefix": "import-named",
     "body": [
       "import { $2 } from '${1:module}'$0"
@@ -203,7 +203,7 @@
     "description": "Import named export"
   },
 
-    "Export Default": {
+  "Export Default": {
     "prefix": "export-default",
     "body": [
       "export default ${1:value}"
@@ -245,7 +245,7 @@
     "description": "localStorage setItem with JSON stringify"
   },
 
-  "consoleLogNamed": {
+  "Console Log Named": {
     "prefix": "console-log-named",
     "body": [
       "console.log('$1: ', $1)"
@@ -253,7 +253,7 @@
     "description": "Named console log"
   },
 
-  "consoleLog": {
+  "Console Log": {
     "prefix": "console-log",
     "body": [
       "console.log($1)"
@@ -261,7 +261,7 @@
     "description": "Console log"
   },
 
-  "consoleLogJson": {
+  "Console Log JSON": {
     "prefix": "console-log-json",
     "body": [
       "console.log(JSON.stringify($1, null, 2))"
@@ -269,7 +269,7 @@
     "description": "Console log pretty json"
   },
 
-  "consoleLogObject": {
+  "Console Log Object": {
     "prefix": "console-log-object",
     "body": [
       "console.log({ $1 })"
@@ -277,10 +277,11 @@
     "description": "Console log object"
   },
 
-  "consoleLogEslint": {
+  "Console Log ESLint Disable": {
     "prefix": "console-log-eslint-disable",
     "body": [
-      "// eslint-disable-next-line no-console\nconsole.log('$1: ', $1)"
+      "// eslint-disable-next-line no-console",
+      "console.log('$1: ', $1)"
     ],
     "description": "Console log with eslint disable comment"
   },
@@ -317,7 +318,7 @@
     "description": "Console time end — stop measuring"
   },
 
-  "eslintDisable": {
+  "ESLint Disable": {
     "prefix": "eslint-disable",
     "body": [
       "/* eslint-disable @typescript-eslint/no-unused-vars */"
@@ -325,7 +326,7 @@
     "description": "ESLint disable rule"
   },
 
-  "eslintDisableNextLine": {
+  "ESLint Disable Next Line": {
     "prefix": "eslint-disable-nextline",
     "body": [
       "/* eslint-disable-next-line @typescript-eslint/no-unused-vars */"

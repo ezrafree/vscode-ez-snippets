@@ -2,6 +2,15 @@
 
 All notable changes to the "ez-snippets" extension will be documented in this file.
 
+## [1.4.1]
+
+- Reorganize snippets: move hooks and exports to react.json, scoped to JSX and TSX files only
+- Remove use-client and use-server from javascript.json
+- Fix react-component to use fragment instead of hardcoded div
+- Fix reactnative-component to use style prop instead of className
+- Clean up react-typescript component boilerplate — remove opinionated imports and hardcoded props
+- Clean up reactnative-typescript component boilerplate — remove deprecated FunctionComponent pattern
+
 ## [1.4.0]
 
 - Add React hook snippets: useState (with auto-capitalized setter), useEffect, useCallback, useMemo, useRef, useContext, useReducer
